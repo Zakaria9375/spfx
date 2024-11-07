@@ -1,0 +1,54 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "wp-r-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/wpR/RWebPart.js",
+          "manifest": "./src/webparts/wpR/RWebPart.manifest.json"
+        }
+      ]
+    },
+    "pp-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/pp/PpWebPart.js",
+          "manifest": "./src/webparts/pp/PpWebPart.manifest.json"
+        }
+      ]
+    },
+    "list-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/list/ListWebPart.js",
+          "manifest": "./src/webparts/list/ListWebPart.manifest.json"
+        }
+      ]
+    },
+    "page-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/page/PageWebPart.js",
+          "manifest": "./src/webparts/page/PageWebPart.manifest.json"
+        }
+      ]
+    },
+    "records-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/records/RecordsWebPart.js",
+          "manifest": "./src/webparts/records/RecordsWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "WpRWebPartStrings": "lib/webparts/wpR/loc/{locale}.js",
+    "PpWebPartStrings": "lib/webparts/pp/loc/{locale}.js",
+    "ListWebPartStrings": "lib/webparts/list/loc/{locale}.js",
+    "PageWebPartStrings": "lib/webparts/page/loc/{locale}.js",
+    "RecordsWebPartStrings": "lib/webparts/records/loc/{locale}.js"
+  }
+}
